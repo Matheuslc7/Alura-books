@@ -1,4 +1,77 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --cor-fundo: #EBECEE;
+    --cor-branco: #FFFFFF;
+    --cor-amarelo: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-texto: 'Poppins', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.cabeçalho {
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.containerBotao:checked ~ .listaMenu {
+    display: block;
+}
+
+.menuHamburguer {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(imagens/Menu.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 1rem;
+}
+
+.imgContainer {
+    padding: 1rem;
+}
+
+.listaMenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.titulo {
+    color: var(--cor-amarelo);
+    font-family: var(--font-texto);
+    
+}
+
+.menuItem {
+    padding: 1rem;
+    background-color: var(--cor-branco);
+}
+
+.menuLink {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-family: var(--font-texto);
 }
