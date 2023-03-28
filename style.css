@@ -4,6 +4,7 @@
     --cor-fundo: #EBECEE;
     --cor-branco: #FFFFFF;
     --cor-amarelo: #EB9B00;
+    --cor-azul: #002F52;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --font-texto: 'Poppins', sans-serif;
 }
@@ -59,6 +60,8 @@ body {
 .titulo {
     color: var(--cor-amarelo);
     font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 700;
     
 }
 
@@ -74,4 +77,48 @@ body {
     background-clip: text;
     text-transform: uppercase;
     font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner {
+    text-align: center;
+    background-color: var(--cor-azul);
+    padding: 2.5rem 2rem;
+}
+
+.tituloBanner {
+    font-family: var(--font-texto);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-branco);
+    margin-bottom: 1rem;
+}
+
+.textoBanner {
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-branco);
+    line-height: 1.25rem;
+    margin: 1rem;
+}
+
+.pesquisaBanner {
+    background-color: transparent;
+    border: 2px solid var(--cor-branco);
+    color: var(--cor-branco);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    width: 100%;
+}
+
+.pesquisaBanner::placeholder {
+    font-family: var(--font-texto);
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-align: end;
+    color: var(--cor-branco);
+    background-image: url(imagens/Vector.png);
+    background-repeat: no-repeat;
 }
