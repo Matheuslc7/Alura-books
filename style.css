@@ -242,3 +242,56 @@ body {
     font-size: .75rem;
     font-weight: 700;
 }
+
+.contato {
+    background-color: var(--cor-branco);
+    padding: 1em;
+}
+
+.tituloContato,
+.textoContato {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tituloContato {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.textoContato {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.botaoEmail {
+    padding: .75rem;
+    border: 1px solid var(--cor-azul);
+    border-radius: 1.5rem;
+    width: 90%;
+    color: var(--cor-azul);
+    margin-bottom: 1rem;
+}
+
+.botaoEmail::placeholder {
+    font-family: var(--font-texto);
+    color: var(--cor-azul);
+    background-image: url(imagens/email.png);
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+
+
+.rodape {
+    background-color: var(--cor-branco);
+    padding: 1rem;
+}
+
+.tituloRodape {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-azul);
+}
