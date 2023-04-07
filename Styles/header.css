@@ -1,0 +1,174 @@
+.cabeçalho {
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.containerBotao:checked ~ .listaMenu {
+    display: block;
+}
+
+.containerBotao {
+    display: none;
+}
+
+.menuHamburguer {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../imagens/Menu.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 1rem;
+}
+
+.imgContainer {
+    padding: 1rem;
+}
+
+.listaMenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.titulo {
+    color: var(--cor-amarelo);
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+.menuItem {
+    padding: .7rem;
+    background-color: var(--cor-branco);
+}
+
+.menuLink {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner {
+    text-align: center;
+    background: var(--azul-degrade);
+    padding: 2.5rem 2rem;
+}
+
+.tituloBanner {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-branco);
+    margin-bottom: 1rem;
+}
+
+.textoBanner {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-branco);
+    line-height: 1rem;
+    margin: 1rem;
+}
+
+.pesquisaBanner {
+    background-color: transparent;
+    border: 1px solid var(--cor-branco);
+    color: var(--cor-branco);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    width: 100%;
+}
+
+.pesquisaBanner::placeholder {
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding-left: 2rem;
+    color: var(--cor-branco);
+    background-image: url(../imagens/Vector.png);
+    background-repeat: no-repeat;
+}
+
+.tituloLogo {
+    display: none;
+}
+
+.opções {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .tituloLogo,
+    .tituloLogoNegrito {
+        font-family: var(--font-sec);
+    }
+
+    .tituloLogo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .tituloLogoNegrito {
+        font-weight: 700;
+    }
+
+    .opções {
+        display: flex;
+        list-style: none;
+    }
+
+    .opçõesItem {
+        padding: 0 1rem;
+        text-transform: uppercase;
+    }
+
+    .opçõesLink {
+        text-decoration: none;
+        color: var(--azul-degrade);
+    }
+
+    .favoritos {
+        display: none;
+    }
+
+    .menuHamburguer {
+        display: none;
+    }
+
+    .opçõesBotão:checked ~ .listaMenu {
+        display: block;
+        width: auto;
+    }
+
+    .opçõesBotão {
+        display: none;
+    } 
+
+    .tituloBanner {
+        font-size: 2.25rem;
+    }
+
+    .pesquisaBanner {
+        width: 40%;
+        padding: 0.8rem 2rem;
+        text-align: center;
+    }
+
+    .pesquisaBanner::placeholder {
+        background-position: 2.5rem;
+        padding: 1rem;
+    }
+}

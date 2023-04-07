@@ -1,0 +1,112 @@
+.tituloCarrossel {
+    color: var(--cor-amarelo);
+    text-align: center;
+    background-color: var(--cor-branco);
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5rem 0;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-branco);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: .6rem;
+    margin: 1rem .5rem;
+    padding: 1rem;
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.infoCards {
+    display: flex;
+}
+
+.textosCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCard {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-amarelo);
+    margin-bottom: .5rem;
+}
+
+.subtituloCard {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-azul);
+
+}
+
+.descricaoCard {
+    font-size: .75rem;
+    font-weight: 400;
+    margin: 1rem 1.7rem 0 0;
+}
+
+.angularLogo {
+    margin-bottom: 1.5rem;
+}
+
+.botoes {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.saibaMais {
+    padding: 1rem 2.26rem;
+    background-color: var(--cor-amarelo);
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .tituloCarrossel {
+        font-size: 1.63rem;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+    display: block;
+    top: 65%;
+    }
+
+    .cards {
+        width: 40%;
+        margin: 2rem auto;
+    }
+}
