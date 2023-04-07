@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
+    <link rel="icon" href="imagens/Logo (1).png">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,9 +36,37 @@
                 </li>
             </ul>
             <img class="imgContainer" src="imagens/Logo (1).png" alt="Logo AluraBooks">
+            <h1 class="tituloLogo"><b class="tituloLogoNegrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opçõesMenu" class="opçõesBotão">
+            <label for="opçõesMenu">
+                <li class="opçõesItem">Categorias</li>
+            </label>
+            <ul class="listaMenu">
+                <li class="menuItem">
+                    <a class="menuLink" href="#">Programação</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="#">Font-end</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="#">Estrutura</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="#">Business</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="#">Design & UX</a>
+                </li>
+            </ul>
+            <li class="opçõesItem"><a href="#" class="opçõesLink">Favoritos</a></li>
+            <li class="opçõesItem"><a href="#" class="opçõesLink">Minha estante</a></li>
+        </ul>
+
         <div>
-            <a href="#"><img class="imgContainer" src="imagens/Favoritos (1).png" alt="Favoritos"></a>
+            <a href="#"><img class="imgContainer favoritos" src="imagens/Favoritos (1).png" alt="Favoritos"></a>
             <a href="#"><img class="imgContainer" src="imagens/Compras.png" alt="Compras"></a>
             <a href="#"><img class="imgContainer" src="imagens/Usuario.png" alt="Usuario"></a>
         </div>
@@ -138,43 +169,132 @@
     </section>
 
     <section class="topicos">
-        <h2 class="topicosTitulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul class="listaTopicos">
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">Android</a></li>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">Marketing Digital</a></li>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">Agile</a></li> <br>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">Startups</a></li>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">HTML & CSS</a></li>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">Python</a></li> <br>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">OO</a></li>
-                <li class="itemTopicos"><a href="#" class="ancorasTopicos">Java</a></li>
-            </ul>
-        </section>
+    <h2 class="topicosTitulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="listaTopicos">
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">Android</a></li>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">Marketing Digital</a></li>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">Agile</a></li> <br>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">Startups</a></li>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">HTML & CSS</a></li>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">Python</a></li> <br>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">OO</a></li>
+            <li class="itemTopicos"><a href="#" class="ancorasTopicos">Java</a></li>
+        </ul>
+    </section>
 
-        <section class="contato">
+    <section class="contato">
+        <div class="contatoDescricao">
             <h2 class="tituloContato">Fique por dentro das novidades!</h2>
             <p class="textoContato">Atualizações de e-books, novos livros, promoções e outros.</p>
-            <input type="email" placeholder="Cadastre seu e-mail" class="botaoEmail">
-        </section>
-    
-        <hr/>
-    
-        <footer class="rodape">
-            <h2 class="tituloRodape">Grupo Alura</h2>
-        </footer>
-    
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper', {
-            speed: 400,
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-      },
-          });
-        </script>
-    
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="botaoEmail">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="tituloRodape">Grupo Alura</h2>
+        <ul class="listaRodape">
+            <li class="listaTitulo">Edcucação</li>
+            <li class="listaItem">
+                <img src="imagens/Rodapé/Caelum.png" alt="Logo caelum">
+                <a href="#" class="listaRodapeLink">Caelum</a>
+            </li>
+            <li class="listaItem">
+                <img src="imagens/Rodapé/CasaDoCodigo.png" alt="Logo casa do código">
+                <a href="#" class="listaRodapeLink">Casa do Código</a>
+            </li>
+        </ul>
+
+        <ul class="listaRodape">
+            <li class="listaTitulo">Edcucação Online</li>
+            <li class="listaItem">
+                <img src="imagens/Rodapé/Alura.png" alt="Logo alura">
+                <a href="#" class="listaRodapeLink">Alura</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/AluraEmpresas.png" alt="Logo casa da Alura para empresas">
+                <a href="#" class="listaRodapeLink">Alura Para Empresas</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/AluraLatam.png" alt="Logo da Alura LATAM">
+                <a href="#" class="listaRodapeLink">Alura LATAM</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/AluraStart.png" alt="Logo da Alura start">
+                <a href="#" class="listaRodapeLink">Alura Start</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/MusicDot.png" alt="Logo music dot">
+                <a href="#" class="listaRodapeLink">MusicDot</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/AluraLingua.png" alt="Logo alura lingua">
+                <a href="#" class="listaRodapeLink">Alura Lingua</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/PM3.png" alt="Logo PM3">
+                <a href="#" class="listaRodapeLink">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="listaRodape">
+            <li class="listaTitulo">Comunidade</li>
+            <li class="listaItem">
+                <img src="imagens/Rodapé/HipstersTech.png" alt="Logo Hipsters.Tech">
+                <a href="#" class="listaRodapeLink">Hipsters ponto Tech</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/Scuba.png" alt="Logo Scuba Dev">
+                <a href="#" class="listaRodapeLink">Scuba Dev</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/Layers.png" alt="Logo Layers.Tech">
+                <a href="#" class="listaRodapeLink">Layers ponto Tech</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/LikeABoss.png" alt="Logo Like a Boss">
+                <a href="#" class="listaRodapeLink">Like a Boss</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/CarreiraSemFronteira.png" alt="Logo Carreira sem fronteira">
+                <a href="#" class="listaRodapeLink">Carreira Sem Fronteira</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/HipstersJobs.png" alt="Logo Hipsters.Jobs">
+                <a href="#" class="listaRodapeLink">Hipsters ponto Jobs</a>
+            </li>
+
+            <li class="listaItem">
+                <img src="imagens/Rodapé/GUJ.png" alt="Logo GUJ">
+                <a href="#" class="listaRodapeLink">GUJ</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+  },
+      });
+    </script>
 </body>
 </html>
