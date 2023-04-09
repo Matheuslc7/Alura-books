@@ -1,3 +1,3 @@
 # Projeto alura books
 
-> Status : Em desenvolvimento 🚧
+> Status : Finalizado 
