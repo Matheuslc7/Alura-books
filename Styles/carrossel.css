@@ -110,3 +110,40 @@
         margin: 2rem auto;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .carrosselContainer {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .tituloCard {
+        font-size: 2rem;
+    }
+
+    .descricaoCard {
+        font-size: 1rem;
+    }
+
+    .cards {
+        width: 80%;
+        margin: 4rem 0 4rem 3rem;
+    }
+
+    .textosCard {
+        margin-right: 2rem;
+    }
+
+    .angularLogo {
+        margin: 0;
+    }
+}

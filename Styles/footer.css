@@ -53,3 +53,15 @@
         font-size: .875rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+
+    .rodape {
+        padding: 3rem 0;
+    }
+
+    .listaRodape {
+        border-left: 1px solid var(--cor-cinza);
+        padding: 1rem;
+    }
+}

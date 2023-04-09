@@ -39,3 +39,10 @@
         font-size: 1.25rem;
     }    
 }
+
+@media screen and (min-width: 1728px) {
+    
+    .listaTopicos {
+        padding: 0 30vw;
+    }
+}

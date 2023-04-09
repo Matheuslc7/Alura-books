@@ -19,6 +19,14 @@
     display: none;
 }
 
+.containerBotao:checked ~ .containerRotulo>.menuHamburguer {
+    background-image: url(../imagens/MenuAberto.png);
+}
+
+.containerBotao:checked ~ .containerRotulo {
+    background-color: var(--azul-degrade);
+}
+
 .menuHamburguer {
     width: 2rem;
     height: 2rem;
@@ -49,7 +57,7 @@
 }
 
 .menuItem {
-    padding: .7rem;
+    padding: .5rem;
     background-color: var(--cor-branco);
 }
 
@@ -100,6 +108,7 @@
     color: var(--cor-branco);
     background-image: url(../imagens/Vector.png);
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .tituloLogo {
@@ -107,6 +116,10 @@
 }
 
 .opções {
+    display: none;
+}
+
+.linkContainer p {
     display: none;
 }
 
@@ -170,5 +183,40 @@
     .pesquisaBanner::placeholder {
         background-position: 2.5rem;
         padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .linkContainer {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--azul-degrade);
+        font-size: 1.25rem;
+        margin: 0 1.5rem;
+    }
+
+    .linkContainer p {
+        display: block;
+    }
+
+    .container {
+        margin: 0 1rem;
+    }
+
+    .opções {
+        margin-right: auto;
+    }
+
+    .banner {
+        padding: 6rem;
+    }
+
+    .pesquisaBanner {
+        width: 35%;
+    }
+
+    .pesquisaBanner::placeholder {
+        background-position: 8rem;
     }
 }
